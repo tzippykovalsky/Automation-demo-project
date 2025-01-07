@@ -15,8 +15,14 @@ public class SidebarPage extends WebBasePage {
     @FindBy(id=":r6h:--trailing-visual")
     private WebElement numUsers;
 
+    @FindBy(id=":r6:--label")
+    private WebElement repositories;
+
     public WebElement getNumUsers() {
         return numUsers;
+    }
+    public WebElement getRepositories() {
+        return repositories;
     }
     public void clickOnUsers() {
         users.click();
